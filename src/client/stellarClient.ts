@@ -12,6 +12,8 @@
 import { SorobanRpc, Transaction } from '@stellar/stellar-sdk';
 import { NetworkConfig, NetworkType, getNetworkConfig } from '../utils/networkConfig';
 
+const isDev = typeof process !== 'undefined' && process.env?.NODE_ENV !== 'production';
+
 /**
  * StellarClient Class
  * 
@@ -41,7 +43,7 @@ export class StellarClient {
     this.server = new SorobanRpc.Server(this.config.rpcUrl);
     
     // Log initialization in development mode
-    if (process.env.NODE_ENV !== 'production') {
+    if (isDev) {
       console.debug(`[StellarClient] Initialized for network: ${network} (RPC: ${this.config.rpcUrl})`);
     }
   }

@@ -14,6 +14,8 @@ import { xdr, Address, scValToNative } from '@stellar/stellar-sdk';
 import { StellarClient } from '../client/stellarClient';
 import { buildContractCallTransaction } from '../utils/transactionBuilder';
 
+const isDev = typeof process !== 'undefined' && process.env?.NODE_ENV !== 'production';
+
 /**
  * VaultContract Class
  * 
@@ -35,7 +37,7 @@ export class VaultContract {
     this.client = client;
     this.contractId = contractId;
     
-    if (process.env.NODE_ENV !== 'production') {
+    if (isDev) {
       console.debug(`[VaultContract] Initialized for contract: ${contractId}`);
     }
   }
@@ -61,8 +63,8 @@ export class VaultContract {
         new Address(sourceAddress).toScVal(),
         // Convert the string amount into a Soroban i128 ScVal
         xdr.ScVal.scvI128(new xdr.Int128Parts({
-            hi: new xdr.Int64(0, 0),
-            lo: xdr.Uint64.fromString(amount)
+          hi: new xdr.Int64(0, 0),
+          lo: xdr.Uint64.fromString(amount)
         })),
       ],
       sourceAddress,
@@ -90,8 +92,8 @@ export class VaultContract {
         new Address(sourceAddress).toScVal(),
         // Convert the string amount into a Soroban i128 ScVal
         xdr.ScVal.scvI128(new xdr.Int128Parts({
-            hi: new xdr.Int64(0, 0),
-            lo: xdr.Uint64.fromString(amount)
+          hi: new xdr.Int64(0, 0),
+          lo: xdr.Uint64.fromString(amount)
         })),
       ],
       sourceAddress,
