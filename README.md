@@ -190,6 +190,22 @@ validtrust-sdk/
 
 ---
 
+## Funding and Drips
+
+This repository is part of the ValidTrust ecosystem, which is eligible for funding through [Drips](https://drips.network).
+
+### Repository Claiming
+Maintainers should claim this repository on Drips to receive funding. The claiming process may require adding a `FUNDING.json` file with ownership information to the repository root. **Important**: Do not create `FUNDING.json` with placeholder wallet addresses - only add real, maintainer-approved addresses.
+
+### Upstream Dependencies
+Key dependencies that may be relevant for Drips funding:
+- `@stellar/stellar-sdk` - Stellar blockchain SDK
+- `@stellar/freighter-api` - Freighter wallet integration
+
+For more details on Drips readiness, see [docs/drips-readiness.md](docs/drips-readiness.md).
+
+---
+
 ## Contributing
 
 Contributions are welcome! Please read the [Contributing Guidelines](CONTRIBUTING.md) before opening a Pull Request.
