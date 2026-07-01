@@ -1,5 +1,7 @@
 <div align="center">
 
+![ValidTrust SDK Logo](logo/valid%20sdk%20logo.png)
+
 # ValidTrust SDK
 
 **The official TypeScript SDK for building on the ValidTrust protocol.**
