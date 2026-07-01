@@ -1,6 +1,6 @@
 /**
  * @file vault.ts
- * @description A high-level wrapper for the Validity Network Vault smart contract.
+ * @description A high-level wrapper for the ValidTrust Network Vault smart contract.
  * This class provides a developer-friendly interface to interact with the vault,
  * abstracting away the complexities of XDR encoding and Soroban RPC calls.
  * 
@@ -19,7 +19,7 @@ const isDev = typeof process !== 'undefined' && process.env?.NODE_ENV !== 'produ
 /**
  * VaultContract Class
  * 
- * Provides methods to interact with a specific instance of the Validity Vault contract.
+ * Provides methods to interact with a specific instance of the ValidTrust Vault contract.
  * 
  * @class VaultContract
  */

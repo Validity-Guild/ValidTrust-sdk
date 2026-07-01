@@ -1,6 +1,6 @@
-# Validity SDK Architecture
+# ValidTrust SDK Architecture
 
-The Validity SDK is structured into clean, modular components to make interacting with Stellar and Soroban smart contracts simple for developers.
+The ValidTrust SDK is structured into clean, modular components to make interacting with Stellar and Soroban smart contracts simple for developers.
 
 ## Modules and Responsibilities
 
@@ -13,7 +13,7 @@ The Validity SDK is structured into clean, modular components to make interactin
 - **Dependencies:** `@stellar/freighter-api`.
 
 ### 3. `contracts/vault.ts`
-- **Responsibilities:** Interacts specifically with the Validity vault contract. Provides methods to build deposit, withdraw, and claim transactions. Fetches contract state (e.g., balances).
+- **Responsibilities:** Interacts specifically with the ValidTrust vault contract. Provides methods to build deposit, withdraw, and claim transactions. Fetches contract state (e.g., balances).
 - **Dependencies:** `StellarClient`, `transactionBuilder`.
 
 ### 4. `utils/transactionBuilder.ts`

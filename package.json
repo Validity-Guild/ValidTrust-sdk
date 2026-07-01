@@ -1,7 +1,7 @@
 {
-  "name": "validity-sdk",
+  "name": "validtrust-sdk",
   "version": "1.0.0",
-  "description": "ValiditySDK is a TypeScript developer toolkit that simplifies interaction with Validity smart contracts deployed on the Stellar blockchain.",
+  "description": "ValidTrustSDK is a TypeScript developer toolkit that simplifies interaction with ValidTrust smart contracts deployed on the Stellar blockchain.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -12,16 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/validity-network/validity-sdk.git"
+    "url": "https://github.com/validtrust-network/validtrust-sdk.git"
   },
   "keywords": [
     "stellar",
     "soroban",
     "smart-contracts",
     "sdk",
-    "validity"
+    "validtrust"
   ],
-  "author": "Validity Network",
+  "author": "ValidTrust Network",
   "license": "MIT",
   "dependencies": {
     "@stellar/freighter-api": "^2.0.0",
