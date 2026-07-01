@@ -1,6 +1,6 @@
 <div align="center">
 
-![ValidTrust SDK Logo](logo/valid%20sdk%20logo.png)
+<img src="logo/valid%20sdk%20logo.png" alt="ValidTrust SDK Logo" width="120" height="120" />
 
 # ValidTrust SDK
 
