@@ -10,7 +10,7 @@
  * @module contracts/VaultContract
  */
 
-import { xdr, Address, scValToNative } from '@stellar/stellar-sdk';
+import { xdr, Address, scValToNative, Transaction } from '@stellar/stellar-sdk';
 import { StellarClient } from '../client/stellarClient';
 import { buildContractCallTransaction } from '../utils/transactionBuilder';
 
