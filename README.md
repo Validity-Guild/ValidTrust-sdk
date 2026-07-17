@@ -18,7 +18,7 @@
 
 ## Overview
 
-`validtrust-sdk` is the official TypeScript developer toolkit for the [ValidTrust Network](https://github.com/validtrust-network/validtrust-network). It abstracts the complexity of Soroban RPC calls, transaction building, and wallet integration into a clean, typed API — allowing developers to integrate ValidTrust protocol interactions into any JavaScript or TypeScript application in minutes.
+`validtrust-sdk` is the official TypeScript developer toolkit for the [ValidTrust Network](https://github.com/Validity-Guild/ValidTrust-sdk). It abstracts the complexity of Soroban RPC calls, transaction building, and wallet integration into a clean, typed API — allowing developers to integrate ValidTrust protocol interactions into any JavaScript or TypeScript application in minutes.
 
 ---
 

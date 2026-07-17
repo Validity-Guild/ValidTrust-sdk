@@ -4,7 +4,7 @@
 
 Install the SDK in your project:
 ```bash
-npm install validity-sdk
+npm install validtrust-sdk
 ```
 
 ## Step-by-Step Examples
@@ -14,7 +14,7 @@ npm install validity-sdk
 Use `WalletConnector` to connect to Freighter:
 
 ```typescript
-import { WalletConnector } from 'validity-sdk';
+import { WalletConnector } from 'validtrust-sdk';
 
 const wallet = new WalletConnector();
 const address = await wallet.connect();
@@ -25,7 +25,7 @@ const address = await wallet.connect();
 Create a client and initialize the vault contract:
 
 ```typescript
-import { StellarClient, VaultContract } from 'validity-sdk';
+import { StellarClient, VaultContract } from 'validtrust-sdk';
 
 const client = new StellarClient('testnet');
 const vault = new VaultContract(client, 'CONTRACT_ID');
